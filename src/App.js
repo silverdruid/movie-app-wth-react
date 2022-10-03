@@ -9,13 +9,13 @@ import movieCard from "./movieCard";
 
 const url = 'http://www.omdbapi.com/?i=tt3896198&apikey=b33c5bf3'
 
-const movie1 = {
-    "Title": "superman",
-    "Year": "2012",
-    "name": "movie",
-    "Poster": "N/A",
-    "Type": "movie"
-}
+// const movie1 = {
+//     "Title": "superman",
+//     "Year": "2012",
+//     "name": "movie",
+//     "Poster": "N/A",
+//     "Type": "movie"
+// }
 
 const App = () => {
     const [searchTerm, setSearchTerm] = useState("");
@@ -55,7 +55,7 @@ const App = () => {
                         <div className="container">
                            {
                                 movie.map((movie) => {
-                                    <movieCard movie={movie} />
+                                    <movieCard movie ={movie} />
                             })
                            }
                         </div>   
